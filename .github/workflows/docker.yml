@@ -33,7 +33,7 @@ jobs:
         context: .
         push: true
         platforms: linux/amd64
-        tags: ghcr.io/${{ github.repository.toLowerCase() }}:latest
+        tags: ghcr.io/mesnero/docuseal:latest
         # Layer caching: speeds up rebuilds by reusing unchanged layers from a previous push
-        cache-from: type=registry,ref=ghcr.io/${{ github.repository.toLowerCase() }}:cache
-        cache-to: type=registry,ref=ghcr.io/${{ github.repository.toLowerCase() }}:cache,mode=max
+        cache-from: type=registry,ref=ghcr.io/mesnero/docuseal:cache
+        cache-to: type=registry,ref=ghcr.io/mesnero/docuseal:cache,mode=max
